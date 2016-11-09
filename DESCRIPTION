@@ -1,0 +1,11 @@
+Package: nbinom
+Type: Package
+Title: Negative binomial regression
+Version: 0.1
+Date: 2016-10-07
+Author: Patrick O. Perry
+Maintainer: Patrick O. Perry <pperry@stern.nyu.edu>
+Description: Negative binomial regression fitting and
+    diagnostics.
+License:     Apache License (== 2.0) | file LICENSE
+Encoding:    UTF-8
