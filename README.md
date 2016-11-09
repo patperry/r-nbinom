@@ -47,5 +47,5 @@ Evaluate the fitted likelihood on new data:
 
     y1 <- c(5, 10, 15)
     mu1 <- predict(fit, newdata=data.frame(exposure=c(10, 20, 30)),
-                   "response")
-    lik1 <- dnbinom(y, mu=mu1, size=1/hetero_est, log=TRUE)
+                   type="response")
+    lik1 <- dnbinom(y1, mu=mu1, size=1/hetero_est, log=TRUE)
