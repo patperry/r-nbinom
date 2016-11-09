@@ -33,7 +33,7 @@ Generate negative binomial data using the `rnbinom` function from the
 
 Fit a negative binomial model:
 
-    (fit <- nbinom(y ~ 1, offset = log(exposure))
+    (fit <- nbinom(y ~ 1, offset = log(exposure)))
 
 
 Evaluate the fitted log-likelihood on the data:
