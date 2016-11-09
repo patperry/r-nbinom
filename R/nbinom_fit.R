@@ -54,9 +54,6 @@ nbinom_fit <- function(x, y, weights = rep(1, nobs), start = NULL,
     lhetero <- opt$par
     fit <- attr(opt$value, "fit")
 
-    list(coefficients = fit$coefficients, lhetero = lhetero, 
-         deviance = fit$deviance,
-         rank = fit$rank, pivot=fit$qr$pivot, R = fit$R,
-         lhetero_score = fit$lhetero_score,
-         lhetero_info = fit$lhetero_info)
+    fit$lhetero <- lhetero
+    fit
 }
